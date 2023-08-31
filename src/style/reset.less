@@ -1,0 +1,39 @@
+// 全局修改
+
+// 引入自定义字体
+@font-face {
+  font-family: 'open-sans';
+  src: url('../assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'open-sans-bold';
+  src: url("../assets/fonts/OpenSans/OpenSans-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'open-sans-italic';
+  src: url("../assets/fonts/OpenSans/OpenSans-Italic.ttf");
+}
+
+// 设置全局盒子模型和字体
+*, ::before, ::after {
+  box-sizing: border-box;
+  font-family: 'open-sans', 'open-sans-bold', 'open-sans-italic', 'PingFang SC', 'Microsoft YaHei', 'sans-serif';
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
