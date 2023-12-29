@@ -41,9 +41,11 @@ export default mode => {
       // 按需加载element-plus组件
       autoImport({
         resolvers: [ElementPlusResolver()],
+        dts: 'src/types/auto-imports.d.ts',
       }),
       componentsVite({
         resolvers: [ElementPlusResolver()],
+        dts: 'src/types/components.d.ts',
       }),
     ],
     build: {
