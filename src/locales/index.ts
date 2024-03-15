@@ -7,7 +7,12 @@ import elementLocalEn from 'element-plus/es/locale/lang/en'
 import zhcn from './zh-cn.ts'
 import en from './en.ts'
 
-const messages = {
+type Messages = {
+  en: Record<string, any>
+  'zh-cn': Record<string, any>
+}
+
+const messages: Messages = {
   en: {
     ...en,
     ...elementLocalEn,
@@ -34,7 +39,7 @@ export function getLocal() {
  * 设置本地语言
  * @param language
  */
-export function setLocal(language: 'zh-cn' | 'en') {
+export function setLocal(language: keyof Messages) {
   const i18n = useI18n()
   i18n.locale.value = language
   setLanguage(language)
