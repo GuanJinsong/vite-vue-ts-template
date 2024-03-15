@@ -19,7 +19,7 @@ const __APP_INFO__ = {
 // https://vitejs.dev/config/
 export default mode => {
   const env = loadEnv(mode, __dirname)
-  console.log(env.VITE_BASE)
+  console.log('build config', mode, env)
   return defineConfig({
     base: env.VITE_BASE,
     root,

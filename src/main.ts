@@ -5,6 +5,8 @@ import router from '@/router/index.ts'
 import '@/style/style.less'
 import '@/style/reset.less'
 
+import 'leaflet/dist/leaflet.css'
+
 const app = createApp(App)
 app.use(i18n)
 app.use(router)
